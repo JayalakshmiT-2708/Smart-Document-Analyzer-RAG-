@@ -26,3 +26,55 @@ An AI-powered Smart Document Analyzer built using **Retrieval Augmented Generati
 ---
 
 ## 📂 Project Structure
+Smart-Document-Analyzer-RAG
+│
+├── main.py
+├── create_database.py
+├── requirements.txt
+├── .gitignore
+│
+├── document loaders/
+│ ├── pdf.py
+│ ├── page.py
+│ └── test.py
+│
+├── retrievers/
+│ ├── mmr.py
+│ ├── multiquery.py
+│ └── arxiv.py
+│
+├── vector store/
+│ └── DB.py
+│
+└── data (PDFs)
+
+
+---
+
+## ⚙️ How it Works
+
+1. Load PDF documents
+2. Split documents into chunks
+3. Convert chunks into embeddings
+4. Store embeddings in ChromaDB
+5. User asks a question
+6. Retrieve relevant chunks using similarity search
+7. LLM generates final answer using retrieved context
+
+---
+
+## 🧪 Installation & Setup
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/Smart-Document-Analyzer-RAG.git
+
+# Navigate to folder
+cd Smart-Document-Analyzer-RAG
+
+# Create virtual environment
+python -m venv .venv
+.venv\Scripts\activate   # Windows
+
+# Install dependencies
+pip install -r requirements.txt
