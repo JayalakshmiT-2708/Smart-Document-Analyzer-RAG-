@@ -1,4 +1,14 @@
+# environment
 .env
 .venv/
+
+# python cache
 __pycache__/
 *.pyc
+
+# vector database
+chroma_db/
+*.sqlite3
+
+# logs 
+*.log
