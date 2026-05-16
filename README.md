@@ -28,24 +28,43 @@ An AI-powered Smart Document Analyzer built using **Retrieval Augmented Generati
 ## 📂 Project Structure
 Smart-Document-Analyzer-RAG
 │
+
 ├── main.py
+
 ├── create_database.py
+
 ├── requirements.txt
+
 ├── .gitignore
+
 │
+
 ├── document loaders/
+
 │ ├── pdf.py
+
 │ ├── page.py
+
 │ └── test.py
+
 │
+
 ├── retrievers/
+
 │ ├── mmr.py
+
 │ ├── multiquery.py
+
 │ └── arxiv.py
+
 │
+
 ├── vector store/
+
 │ └── DB.py
+
 │
+
 └── data (PDFs)
 
 
